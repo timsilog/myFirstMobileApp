@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Epsilon Nutrition</string>
+    <string name="calorie_count">Calories Remaining\n%1d / %2d</string>
+    <string name="search_heading">Search results for %1s</string>
+    <string name="app_label">Food Search</string>
+    <string name="search_hint">Enter a food</string>
+
+    <!--scottie-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+
+    <string name="very_severely_underweight"> very_severely_underweight </string>
+    <string name="severely_underweight"> severely_underweight </string>
+    <string name="underweight"> underweight </string>
+    <string name="normal"> normal </string>
+    <string name="overweight"> obese1 </string>
+    <string name="obese1"> obese1 </string>
+    <string name="obese2"> obese2 </string>
+    <string name="obese3"> obese3 </string>
+    <!--scottie-->
+
+    <!--kamal-->
+    <string name="edit_message">Enter a message</string>
+    <string name="button_load">Load</string>
+    <string name="add_recipeTitle">Add Recipe</string>
+    <string name="addRecipeName">* Add Recipe Name</string>
+    <string name="addIngredientName">* Add Ingredient Name(s)</string>
+    <string name="addServingSize">* Add Serving Size</string>
+    <string name="veganOption">Vegan</string>
+    <string name="vegetarianOption">Vegetarian</string>
+    <string name="glutenFree">Gluten Free</string>
+    <string name="button_save">Save</string>
+    <string name="quantityIngredient">Quantity</string>
+
+    <!--For Drop Down Menu when inserting ingredients into "Add a Recipe" section-->
+    <string-array name="measurements_array">
+        <item>cup</item>
+        <item>fl oz</item>
+        <item>oz</item>
+        <item>pint</item>
+        <item>gram</item>
+    </string-array>
+    <string name="dropDownMenuMeasurmentsButton">dropDownMenuMeasurements</string>
+    <!--kamal-->
+</resources>

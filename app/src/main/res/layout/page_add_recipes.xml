@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addRecipe_cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.recipes_system.RecipesHomepage">
+
+            <TextView
+                android:id="@+id/requiredInputDisclaimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="* Required Input"
+                android:textColor="#9A000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="#A6CE66"
+                android:scaleX="0.90"
+                android:scaleY="0.90"
+                android:text="@string/button_save"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#CCFF90"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/addRecipeTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="false"
+                android:text="@string/add_recipeTitle"
+                android:textColor="#2196F3"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/requiredInputDisclaimer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/addRecipeNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/addRecipeName"
+                android:inputType="textMultiLine"
+                android:textColorHighlight="#82B1FF"
+                android:textColorLink="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addRecipeTitle" />
+
+            <EditText
+                android:id="@+id/addIngredientNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/addIngredientName"
+                android:inputType="textImeMultiLine"
+                android:textColorHighlight="#82B1FF"
+                android:textColorLink="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/addRecipeNameText"
+                app:layout_constraintTop_toBottomOf="@+id/addRecipeNameText" />
+
+            <EditText
+                android:id="@+id/addServingSizeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/addServingSize"
+                android:inputType="number|textPersonName|text|textEmailAddress"
+                android:textColorHighlight="#82B1FF"
+                android:textColorLink="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/addIngredientNameText"
+                app:layout_constraintTop_toBottomOf="@+id/addIngredientNameText" />
+
+            <CheckBox
+                android:id="@+id/veganCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="@string/veganOption"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/addRecipeNameText"
+                app:layout_constraintTop_toTopOf="@+id/addRecipeNameText" />
+
+            <CheckBox
+                android:id="@+id/vegetarianCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vegetarianOption"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/veganCheckBox"
+                app:layout_constraintTop_toBottomOf="@+id/veganCheckBox" />
+
+            <CheckBox
+                android:id="@+id/glutenFreeCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/glutenFree"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/vegetarianCheckBox"
+                app:layout_constraintTop_toBottomOf="@+id/vegetarianCheckBox" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="289dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintGuide_end="193dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Switch
+                android:id="@+id/optionalNutritionalInformationEntry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Nutritional Information Entry"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/glutenFreeCheckBox"
+                app:layout_constraintTop_toBottomOf="@+id/glutenFreeCheckBox" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/activity2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Back"
+        android:textColor="#464646"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nutritionalInformation_cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:visibility="invisible"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:contentPadding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addRecipe_cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/nutritionalInformation_constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/grams_DISPLAY3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="g"
+                app:layout_constraintStart_toEndOf="@+id/totalFat_USER_INPUT"
+                app:layout_constraintTop_toBottomOf="@+id/totalFat_USER_INPUT" />
+
+            <TextView
+                android:id="@+id/grams_DISPLAY2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="g"
+                app:layout_constraintStart_toEndOf="@+id/totalFat_USER_INPUT"
+                app:layout_constraintTop_toTopOf="@+id/totalFat_USER_INPUT" />
+
+            <TextView
+                android:id="@+id/totalProtein_TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:text="Total Protein"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/totalProtein_USER_INPUT"
+                app:layout_constraintStart_toStartOf="@+id/totalCarbs_TITLE"
+                app:layout_constraintTop_toTopOf="@+id/totalProtein_USER_INPUT"
+                app:layout_constraintVertical_bias="0.615" />
+
+            <EditText
+                android:id="@+id/totalProtein_USER_INPUT"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/totalProtein_TITLE"
+                app:layout_constraintTop_toBottomOf="@+id/totalCarbs_USER_INPUT" />
+
+            <EditText
+                android:id="@+id/totalCarbs_USER_INPUT"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/totalProtein_USER_INPUT"
+                app:layout_constraintStart_toEndOf="@+id/totalCarbs_TITLE"
+                app:layout_constraintStart_toStartOf="@+id/totalProtein_USER_INPUT"
+                app:layout_constraintTop_toBottomOf="@+id/totalFat_USER_INPUT" />
+
+            <TextView
+                android:id="@+id/totalCarbs_TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:text="Total Carbs"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/totalCarbs_USER_INPUT"
+                app:layout_constraintStart_toStartOf="@+id/totalFat_TITILE"
+                app:layout_constraintTop_toTopOf="@+id/totalCarbs_USER_INPUT"
+                app:layout_constraintVertical_bias="0.666" />
+
+            <TextView
+                android:id="@+id/nutritional_informationTitle_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="false"
+                android:text="Nutritional Information"
+                android:textColor="#2196F3"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/caloriesTITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:clickable="false"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:text="Calories"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/caloriesUSER_INPUT"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/caloriesUSER_INPUT"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/caloriesUSER_INPUT"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/totalFat_USER_INPUT"
+                app:layout_constraintHorizontal_bias="0.804"
+                app:layout_constraintStart_toEndOf="@+id/caloriesTITLE"
+                app:layout_constraintStart_toStartOf="@+id/totalFat_USER_INPUT"
+                app:layout_constraintTop_toBottomOf="@+id/nutritional_informationTitle_textView" />
+
+            <TextView
+                android:id="@+id/totalFat_TITILE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Fat"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/totalFat_USER_INPUT"
+                app:layout_constraintStart_toStartOf="@+id/caloriesTITLE"
+                app:layout_constraintTop_toTopOf="@+id/totalFat_USER_INPUT"
+                app:layout_constraintVertical_bias="0.769" />
+
+            <EditText
+                android:id="@+id/totalFat_USER_INPUT"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/totalCarbs_USER_INPUT"
+                app:layout_constraintStart_toEndOf="@+id/totalFat_TITILE"
+                app:layout_constraintStart_toStartOf="@+id/totalCarbs_USER_INPUT"
+                app:layout_constraintTop_toBottomOf="@+id/caloriesUSER_INPUT" />
+
+            <TextView
+                android:id="@+id/grams_DISPLAY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="g"
+                app:layout_constraintStart_toEndOf="@+id/totalProtein_USER_INPUT"
+                app:layout_constraintTop_toBottomOf="@+id/totalCarbs_USER_INPUT" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

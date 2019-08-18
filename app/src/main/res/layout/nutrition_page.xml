@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NutritionActivity">
+
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:text="Total consumed nutrients today" />
+    <TextView
+        android:id="@+id/text_calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:text="Calories: 1/1" />
+    <TextView
+        android:id="@+id/text_protein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:text="Protein: %1dg" />
+    <TextView
+        android:id="@+id/text_carbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:text="Total Carbohydrates: %1dg" />
+    <TextView
+        android:id="@+id/text_totalfat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:text="Total Fat: %1dg" />
+    <TextView
+        android:id="@+id/text_sfat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        android:text="Saturated Fat: %1dg" />
+    <TextView
+        android:id="@+id/text_cholesterol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        android:text="Cholesterol: %1dg" />
+    <TextView
+        android:id="@+id/text_sodium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        android:text="Sodium: %1dg" />
+    <TextView
+        android:id="@+id/text_potassium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        android:text="Potassium: %1dg" />
+    <TextView
+        android:id="@+id/text_fiber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        android:text="Dietary Fiber: %1dg" />
+    <TextView
+        android:id="@+id/text_sugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="5dp"
+        android:text="Sugars: %1dg" />
+
+
+</LinearLayout>

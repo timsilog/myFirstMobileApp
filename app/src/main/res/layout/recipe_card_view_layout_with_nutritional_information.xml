@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FFD180">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="6dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"><![CDATA[>
+
+        ]]>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#FFFFFF"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/grams_sign3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="g"
+                app:layout_constraintStart_toEndOf="@+id/totalFat_USER_INPUT"
+                app:layout_constraintTop_toBottomOf="@+id/caloriesUSER_INPUT" />
+
+            <TextView
+                android:id="@+id/grams_sign2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="g"
+                app:layout_constraintStart_toEndOf="@+id/totalFat_USER_INPUT"
+                app:layout_constraintTop_toBottomOf="@+id/totalCarbs_USER_INPUT" />
+
+            <TextView
+                android:id="@+id/grams_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="g"
+                app:layout_constraintStart_toEndOf="@+id/totalFat_USER_INPUT"
+                app:layout_constraintTop_toBottomOf="@+id/totalFat_USER_INPUT" />
+
+            <EditText
+                android:id="@+id/totalProtein_USER_INPUT"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textPersonName"
+                android:textColor="#696969"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toEndOf="@+id/totalProtein_TITLE"
+                app:layout_constraintTop_toBottomOf="@+id/totalCarbs_USER_INPUT" />
+
+            <EditText
+                android:id="@+id/totalCarbs_USER_INPUT"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textPersonName"
+                android:textColor="#696969"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/totalProtein_USER_INPUT"
+                app:layout_constraintStart_toEndOf="@+id/totalCarbs_TITLE"
+                app:layout_constraintStart_toStartOf="@+id/totalProtein_USER_INPUT"
+                app:layout_constraintTop_toBottomOf="@+id/totalFat_USER_INPUT" />
+
+            <EditText
+                android:id="@+id/totalFat_USER_INPUT"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textPersonName"
+                android:textColor="#696969"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/totalCarbs_USER_INPUT"
+                app:layout_constraintStart_toEndOf="@+id/totalFat_TITILE"
+                app:layout_constraintStart_toStartOf="@+id/totalCarbs_USER_INPUT"
+                app:layout_constraintTop_toBottomOf="@+id/caloriesUSER_INPUT" />
+
+            <EditText
+                android:id="@+id/caloriesUSER_INPUT"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusableInTouchMode="false"
+                android:inputType="textPersonName"
+                android:textColor="#696969"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/totalFat_USER_INPUT"
+                app:layout_constraintStart_toEndOf="@+id/caloriesTITLE"
+                app:layout_constraintStart_toStartOf="@+id/totalFat_USER_INPUT"
+                app:layout_constraintTop_toBottomOf="@+id/nutritionalInformation_textViewDISPLAY" />
+
+            <TextView
+                android:id="@+id/totalProtein_TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="18dp"
+                android:clickable="false"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:text="Total Protein"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toBottomOf="@+id/totalCarbs_TITLE" />
+
+            <TextView
+                android:id="@+id/totalCarbs_TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:clickable="false"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:text="Total Carbs"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@+id/totalProtein_TITLE"
+                app:layout_constraintTop_toBottomOf="@+id/totalFat_TITILE" />
+
+            <TextView
+                android:id="@+id/totalFat_TITILE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Total Fat"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@+id/totalCarbs_TITLE"
+                app:layout_constraintTop_toBottomOf="@+id/caloriesTITLE" />
+
+            <TextView
+                android:id="@+id/caloriesTITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:clickable="false"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:text="Calories"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/caloriesUSER_INPUT"
+                app:layout_constraintStart_toStartOf="@+id/totalFat_TITILE" />
+
+            <TextView
+                android:id="@+id/nutritionalInformation_textViewDISPLAY"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Nutritional Info."
+                android:textColor="#979700"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/recipeName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:capitalize="words"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="@string/addRecipeName"
+                android:textAllCaps="false"
+                android:textColor="#3F51B5"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/addRecipeName"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/recipeIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="Ingredient(s):"
+                android:textColor="#009688"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/glutenFreeCheckBox"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/servingSizeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:text="Serving Size:"
+                android:textColor="#009688"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recipeName" />
+
+            <CheckBox
+                android:id="@+id/veganCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:clickable="false"
+                android:focusable="auto"
+                android:focusableInTouchMode="false"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:text="@string/veganOption"
+                android:textColor="#696969"
+                android:textColorHighlight="#D50000"
+                android:textColorLink="#FF80AB"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/servingSizeTitle"
+                tools:text="@string/veganOption"
+                tools:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/vegetarianCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:text="@string/vegetarianOption"
+                android:textColor="#696969"
+                android:textColorHighlight="#D50000"
+                android:textColorLink="#D50000"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toEndOf="@+id/veganCheckBox"
+                app:layout_constraintTop_toBottomOf="@+id/servingSizeTitle"
+                tools:text="@string/vegetarianOption"
+                tools:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/glutenFreeCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:text="@string/glutenFree"
+                android:textColor="#696969"
+                android:textColorHighlight="#FF80AB"
+                android:textColorLink="#FF80AB"
+                android:textSize="12sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/veganCheckBox"
+                tools:text="@string/glutenFree"
+                tools:visibility="visible" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                app:layout_constraintEnd_toStartOf="@+id/glutenFreeCheckBox"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/recipeIngredients"
+                app:layout_constraintTop_toBottomOf="@+id/recipeName" />
+
+            <EditText
+                android:id="@+id/displayIngredients"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textColor="#696969"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/recipeIngredients"
+                app:layout_constraintTop_toBottomOf="@+id/recipeIngredients" />
+
+            <TextView
+                android:id="@+id/displayServingSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/vegetarianCheckBox"
+                app:layout_constraintStart_toEndOf="@+id/servingSizeTitle"
+                app:layout_constraintTop_toBottomOf="@+id/recipeName"
+                app:layout_constraintVertical_bias="0.125" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="173dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
